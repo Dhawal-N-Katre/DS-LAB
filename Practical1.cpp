@@ -1,21 +1,45 @@
-#include <iostream>
+// #1 sum program
+#include <iostream.h>
 using namespace std;
 
 int main() {
-    int a = 10, b = 3;
-    cout << "a = " << a << ", b = " << b << endl;
-
-    cout << "a + b = " << (a + b) << endl; // Addition
-    cout << "a - b = " << (a - b) << endl; // Subtraction
-    cout << "a * b = " << (a * b) << endl; // Multiplication
-    cout << "a / b = " << (a / b) << endl; // Integer Division
-    cout << "a % b = " << (a % b) << endl; // Modulus (Remainder)
-
-    // Increment and Decrement
-    a++;
-    cout << "a after increment = " << a << endl;
-    b--;
-    cout << "b after decrement = " << b << endl;
-
+    int a = 10;
+    int b = 5;
+    int sum = a + b;
+    cout << sum;
     return 0;
+}
+
+
+
+// for average case
+#include <iostream.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "enter any number";
+    cin >> n;
+
+    for (int i = 0; i <= n; i++) {
+        cout << i;
+    }
+    return 0;
+}
+
+
+// for best case
+#include <iostream.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "enter any no:";
+    cin >> n;
+
+    for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= n; j++) {
+            cout << i << j;
+        }
+    }
 }
